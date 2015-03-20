@@ -57,7 +57,7 @@ WAF.define('waktest-widget', ['waf-core/widget'], function(widget) {
 		if (this.file()) {
 			testFilePath = this.file().replace(/^\/?\.\//, '');
 		}
-		if (typeof designer === 'undefined' && typeof studio === 'undefined') {
+		if (typeof window !== 'undefined' && typeof window.location !== 'undefined') {
 			var match,
 				pl = /\+/g,
 				search = /([^&=]+)=?([^&]*)/g,
