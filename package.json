@@ -1,7 +1,7 @@
 {
-	"name": "Waktest",
+	"name": "waktest-widget",
 	"type": "widget",
-	"studioName": "Test",
+	"studioName": "Unit Test",
 	"category": "Custom Widgets",
 	"iconPath": "/icons/widget.png",
 	"author": "sebastien.courvoisier@4d.com",
@@ -10,9 +10,9 @@
 	"copyright": "(c) 2015 Wakanda",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/developer/Widget.git"
+		"url": "https://github.com/SebCourvoisier4D/waktest-widget.git"
 	},
-	"keywords": ["wakanda", "widget"],
+	"keywords": ["wakanda", "widget", "unit test", "mocha", "chai", "junit"],
 	"engines": {"wakanda": ">= 11"},
 	"license": "MIT",
 	"externalWidgets": [ ],
