@@ -1,5 +1,5 @@
-WAF.define('Waktest', ['waf-core/widget'], function(widget) {
-	var Waktest = widget.create('Waktest', {
+WAF.define('waktest-widget', ['waf-core/widget'], function(widget) {
+	var Waktest = widget.create('waktest-widget', {
 		init: function() {
 			this.node.innerHTML += '<div id="waktest-waf" class="waf-studio-donotsave"><span id="waktest-waf-file"></span><div id="waktest-waf-log"></div><span id="waktest-waf-label"></span><button id="waktest-waf-run" type="button" onclick="_waktestRun()">Run</button></div>';
 		},
