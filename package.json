@@ -1,0 +1,24 @@
+{
+	"name": "Waktest",
+	"type": "widget",
+	"studioName": "Test",
+	"category": "Custom Widgets",
+	"iconPath": "/icons/widget.png",
+	"author": "sebastien.courvoisier@4d.com",
+	"contributors": [],
+	"version": "0.0.1",
+	"copyright": "(c) 2015 Wakanda",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/developer/Widget.git"
+	},
+	"keywords": ["wakanda", "widget"],
+	"engines": {"wakanda": ">= 11"},
+	"license": "MIT",
+	"externalWidgets": [ ],
+	"loadDependencies": [
+		{"file": "widget.js"},
+		{"file": "css/widget.css"},
+		{"file": "designer.js", "studioOnly": true}
+	]
+}

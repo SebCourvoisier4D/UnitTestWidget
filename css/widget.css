@@ -1,0 +1,55 @@
+#waktest-waf {
+	background-color: whitesmoke;
+	border: 1px solid lightgrey;
+	width: 100%;
+	height: 100%;
+}
+#waktest-waf-log {
+	background-color: white;
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 2px;
+	bottom: 35px;
+	right: 2px;
+	overflow: scroll;
+}
+#waktest-waf-run {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	color: grey;
+}
+#waktest-waf-run[disabled] {
+	opacity: .25;
+}
+#waktest-waf-label {
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	color: grey;
+	font-weight: bold;
+	font-size: 20px;
+}
+#waktest-waf-file {
+	position: absolute;
+	top: 4px;
+	left: 5px;
+	color: grey;
+	font-weight: bold;
+	font-size: 12px;
+}
+#waktest-waf-file a {
+	color: grey;
+}
+#waktest-waf canvas {
+	display: block !important;
+	vertical-align: initial !important;
+}
+#waktest-waf .progress {
+	background-color: transparent !important;
+	box-shadow: none !important;
+
+}
