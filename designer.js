@@ -1,7 +1,7 @@
 (function(Waktest) {
 	//    /* Default width and height of your widget */
-	Waktest.setWidth('600');
-	Waktest.setHeight('400');
+	Waktest.setWidth('250');
+	Waktest.setHeight('48');
 	//    /* Define custom event for your widget */
 	//    Waktest.addEvent('myEvent');
 	/* Customize existing properties */
