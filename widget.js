@@ -90,8 +90,10 @@ WAF.define('waktest-widget', ['waf-core/widget'], function(widget) {
 		if (_this.file()) {
 			testFilePath = _this.file().replace(/^\/?\.\//, '');
 		}
-		if (typeof window !== 'undefined' && typeof window.location !== 'undefined' && typeof designer !== 'object' && typeof studio !== 'object') {
-			$('#waktest-waf', _this.node).draggable();
+		if (typeof window !== 'undefined' && typeof window.location !== 'undefined') {
+			if (typeof designer !== 'object' && typeof studio !== 'object') {
+				$('#waktest-waf', _this.node).draggable();
+			}
 			var match,
 				pl = /\+/g,
 				search = /([^&=]+)=?([^&]*)/g,
@@ -114,6 +116,9 @@ WAF.define('waktest-widget', ['waf-core/widget'], function(widget) {
 			};
 			if (moduleAvailable === true && testFilePath !== null) {
 				var testLink = testFilePath;
+				if (testLink.length > 25) {
+						testLink = '...' + testLink.substr(-22);
+				}
 				var libraryURL = '/waktest-waf-lib?runner=' + _this.runner() + '&assertion=' + _this.assertion() + '&assertionStyle=' + _this.assertionStyle() + '&path=' + testFilePath + '&widgetId=' + _this.id;
 				if (typeof urlParams !== 'undefined' && typeof urlParams['waktest-format'] !== 'undefined') {
 					libraryURL += '&format=' + urlParams['waktest-format'];
