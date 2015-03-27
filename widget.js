@@ -91,7 +91,7 @@ WAF.define('waktest-widget', ['waf-core/widget'], function(widget) {
 			testFilePath = _this.file().replace(/^\/?\.\//, '');
 		}
 		if (typeof window !== 'undefined' && typeof window.location !== 'undefined') {
-			if (typeof designer !== 'object' && typeof studio !== 'object') {
+			if (typeof designer !== 'object') {
 				$('#waktest-waf', _this.node).draggable();
 			}
 			var match,
