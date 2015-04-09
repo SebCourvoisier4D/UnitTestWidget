@@ -1,8 +1,8 @@
 {
-  "name": "waktest-widget",
+  "name": "UnitTest",
   "type": "widget",
   "studioName": "Unit Test",
-  "category": "Custom Widgets",
+  "category": "Utilities",
   "iconPath": "/icons/unitTestSmall.png",
   "author": "sebastien.courvoisier@4d.com",
   "contributors": [],

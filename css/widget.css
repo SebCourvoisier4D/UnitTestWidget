@@ -34,3 +34,11 @@
 	background-color: transparent !important;
 	box-shadow: none !important;
 }
+#waktest-close {
+	position: absolute;
+	bottom: -392px;
+	right: -352px;
+	display: none;
+	cursor: pointer;
+	opacity: .5;
+}

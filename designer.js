@@ -1,46 +1,46 @@
-(function(Waktest) {
+(function(UnitTest) {
 	//    /* Default width and height of your widget */
-	Waktest.setWidth('250');
-	Waktest.setHeight('48');
+	UnitTest.setWidth('250');
+	UnitTest.setHeight('48');
 	//    /* Define custom event for your widget */
-	//    Waktest.addEvent('myEvent');
+	//    UnitTest.addEvent('myEvent');
 	/* Customize existing properties */
-	Waktest.customizeProperty('runner', {
+	/*UnitTest.customizeProperty('runner', {
 		title: 'Runner library',
 		description: 'Runner library to use (currently supported: Mocha).'
 	});
 
-	Waktest.customizeProperty('assertion', {
+	UnitTest.customizeProperty('assertion', {
 		title: 'Assertion library',
 		description: 'Assertion library to use (currently supported: Chai).'
 	});
 
-	Waktest.customizeProperty('assertionStyle', {
+	UnitTest.customizeProperty('assertionStyle', {
 		title: 'Assertion style',
 		description: 'Assertion style to use (currently supported: BDD, TDD).'
-	});
+	});*/
 
-	Waktest.customizeProperty('file', {
+	UnitTest.customizeProperty('file', {
 		title: 'Test path',
 		description: 'Path to the test file or folder to run (JS script).'
 	});
 
-	Waktest.customizeProperty('automatic', {
+	UnitTest.customizeProperty('automatic', {
 		title: 'Run automatically',
 		description: 'Run the attached test automatically on page load.'
 	});
 
-	Waktest.customizeProperty('runInStudio', {
+	UnitTest.customizeProperty('runInStudio', {
 		title: 'Run in Studio',
 		description: 'Run the attached test in the Studio.'
 	});
 	//    /* Add a Label property */
-	//    Waktest.addLabel({
+	//    UnitTest.addLabel({
 	//        'defaultValue': '',
 	//        'position': 'top'
 	//    });
 	//    /* Set the Design and Styles panels */
-	//    Waktest.setPanelStyle({
+	//    UnitTest.setPanelStyle({
 	//        'fClass': true,
 	//        'text': true,
 	//        'background': true,
@@ -50,7 +50,7 @@
 	//        'disabled': ['border-radius']
 	//    });
 	//    /* Override widget's initialization */
-	//    Waktest.prototype.init = function() {
+	//    UnitTest.prototype.init = function() {
 	//        this.node.innerHTML = "Widget Text"; /* Include text inside the widget */
 	//    }
 });
