@@ -138,8 +138,8 @@ WAF.define('UnitTestWidget', ['waf-core/widget'], function(widget) {
 			};
 			if (moduleAvailable === true && testFilePath !== null) {
 				var testLink = testFilePath;
-				if (testLink.length > 25) {
-						testLink = '...' + testLink.substr(-22);
+				if (testLink.length > 20) {
+						testLink = '...' + testLink.substr(-17);
 				}
 				// var libraryURL = '/waktest-waf-lib?runner=' + _this.runner() + '&assertion=' + _this.assertion() + '&assertionStyle=' + _this.assertionStyle() + '&path=' + testFilePath + '&widgetId=' + _this.id;
 				var libraryURL = '/waktest-waf-lib?runner=mocha&assertion=chai&assertionStyle=bdd&path=' + testFilePath + '&widgetId=' + _this.id;
